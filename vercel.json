@@ -1,5 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/src/(.*)", "destination": "/public/js/$1" }
-    ]
-  }
