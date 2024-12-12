@@ -34,9 +34,10 @@ btnEnviar.addEventListener("click", (event) => {
   }
     fetch(URL, {
       method: "POST",
-      headers: { 'Content-Type': 'application/json' },
+      
       body: JSON.stringify(data),
     }).then((res) => {
+      console.log("hola");
       window.location.assign("index.html")
-    });
+    }).catch((error)=>{console.log(error);});
 });
