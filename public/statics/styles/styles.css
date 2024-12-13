@@ -48,3 +48,43 @@ button{
     background-color: black;
     color: white;
 }
+@media(max-width:1000px){
+    #contenedor{
+        margin: 20px;
+        grid-template-columns: repeat(4,1fr)
+    }
+    button{
+        font-size: .8em;
+        padding: 3px;
+    }
+}
+@media(max-width:800px){
+    #contenedor{
+        grid-template-columns: repeat(3,1fr)
+    }
+    .enlace-btn{
+        width: 40%;
+        font-size: .7em;
+        font-weight: 600;
+    }
+    button{
+        font-size: .8em;
+    }
+}
+@media(max-width:600px){
+    #contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px
+    };
+    .enlace-btn{
+        width: 50%;
+        font-size: .7em;
+        font-weight: 600;
+    }
+}
+@media(max-width:500px){
+    #contenedor{
+        grid-template-columns: 1fr;
+        margin: 0px
+    };
+}

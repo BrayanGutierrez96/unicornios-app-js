@@ -13,7 +13,7 @@ async function obtenerUnicornios(contenedor, URL) {
     };
   });
   unicornios.forEach((unicornio) => {
-    currentHtml += `<div class=" card mb-3">
+    currentHtml += `<div class="unicornio-card card mb-3">
           <img
             src=${unicornio.imagen}
             class="card-img-top"
